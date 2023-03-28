@@ -1,0 +1,139 @@
+.backyard{
+    width: 100%;
+    height: 89vh;
+}
+.head{
+    position: absolute;
+    top: 50px;
+    padding-left: 350px;
+}
+.text{
+    padding-right: 150px;
+}
+.img1 {
+    height: 40px;
+    margin-right: 20%;
+    border-radius: 50%;
+}
+.slider{
+    display: flex;
+}
+
+.img2 {
+    height: 40px;
+
+    border-radius: 50%;
+}
+
+.discount {
+    color: #FF6B35;
+}
+.img{
+    width: 250px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.new {
+    color: palevioletred;
+    font-weight: 900;
+}
+
+.l1 {
+    display: flex;
+    padding: 12px;
+    position: relative;
+}
+
+.up {
+    color: darkgray;
+}
+
+.pic {
+    height: 200px;
+}
+
+.card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+svg {
+    fill: gold;
+}
+
+@media (max-width:991px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        right: 0px;
+        background: rgb(170, 170, 170);
+        z-index: 9;
+        padding: 20px;
+
+
+    }
+}
+
+.pin {
+    width: 12vw;
+}
+
+.stars-outer {
+    position: relative;
+    display: inline-block;
+}
+
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.stars-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ccc;
+}
+
+.stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #f8ce0b;
+}
+
+.plus {
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.minus {
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.result {
+    width: 20px;
+    background: transparent;
+    border: none;
+}
+
+.old {
+    color: orange;
+    font-weight: 900;
+}
+
+.pe {
+    cursor: pointer;
+    position: relative;
+    bottom: 200px;
+}

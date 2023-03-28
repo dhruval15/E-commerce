@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/svg-with-js.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"> </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+</head>
+
+<body class="body" data-bs-backdrop="true">
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-dark  d-flex justify-content-between ">
+            <div class="container-fluid py-1">
+
+                <img class="img1" src="logo.jpeg">
+                <div class="d-flex">
+                    <button class="navbar-toggler down order-3 border-0 bg-light ms-3">
+                        <!-- <button class="navbar-toggler order-3 down border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </button> -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- <button class="cross">&#735;</button> -->
+
+                    <div class="collapse navbar-collapse work me-4 " id="navbarSupportedContent"
+                        data-bs-backdrop="true">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active home redirect text-white" aria-current="page"
+                                    href="#home">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle position-relative text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Category
+                                    <div class="position-absolute"></div>
+                                </a>
+
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item redirect" data-category="smartphones"
+                                            href="#smartphone">Smartphones</a></li>
+                                    <li><a class="dropdown-item redirect" data-category="laptops"
+                                            href="#laptop">Laptops</a></li>
+
+                                    <li><a class="dropdown-item redirect" data-category="fragrances"
+                                            href="#fragrance">Fragrances</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-category="skincare"
+                                            href="#skincare">Skincare</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-category="groceries"
+                                            href="#grocerie">Groceries</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Brand
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item redirect" data-brand="Apple" href="#apple">Apple</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-brand="OPPO" href="#oppo">OPPO</a></li>
+                                    <li><a class="dropdown-item redirect" data-brand="Samsung"
+                                            href="#smasung">Samsung</a></li>
+                                    <li><a class="dropdown-item redirect" data-brand="Huawei" href="#huawei">Huawei</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-brand="Infinix"
+                                            href="#infinix">Infinix</a></li>
+                                    <li><a class="dropdown-item redirect" data-brand="HP Pavilion"
+                                            href="#hp pavilion">HP
+                                            Pavilion</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect" data-brand="Dry Rose" href="#dry Rose">Dry
+                                            Rose</a>
+                                    </li>
+                                    <li><a class="dropdown-item redirect " data-brand="Flying Wooden"
+                                            href="#Flying Wooden">Flying
+                                            Wooden</a></li>
+                                    <li><a class="dropdown-item redirect" data-brand="Golden" href="#golden">Golden</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="nav-item">
+                                <a class="nav-link wish redirect text-white" href="#whishlist">Wishlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="cart2 nav-link redirect text-white" href="#cart">Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vr text-white"></div>
+                    <div class="d-flex align-items-center flex-wrap ">
+                        <label class="px-2 text-white" for="">Dhruval</label>
+                        <img class="img2" src="userlogo.jpeg">
+                    </div>
+                </div>
+        </nav>
+        </div>
+    </header>
+    <section class="background position-relative"></section>
+    <div class="container-fluid g-5">
+        <div class="row datapush">
+            <div class="card">
+
+            </div>
+        </div>
+        <!-- <div class="owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
+            <div class="item"><h4>5</h4></div>
+            <div class="item"><h4>6</h4></div>
+            <div class="item"><h4>7</h4></div>
+            <div class="item"><h4>8</h4></div>
+            <div class="item"><h4>9</h4></div>
+            <div class="item"><h4>10</h4></div>
+            <div class="item"><h4>11</h4></div>
+            <div class="item"><h4>12</h4></div>
+        </div> -->
+    </div>
+
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+<script src='script.js'></script>
+
+</html>
